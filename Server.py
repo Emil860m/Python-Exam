@@ -22,6 +22,7 @@ def send_and_receive(name):
             send_to_all(name.encode() + ": ".encode() + data)
         else:
             conn_list[name].close()
+            print(name + " disconnected.")
             conn_list.pop(name)
             print("Connected Users: " + conn_list)
 

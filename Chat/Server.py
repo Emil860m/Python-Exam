@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-"""Server for multithreaded (asynchronous) chat application."""
 from socket import AF_INET, socket, SOCK_STREAM
 from threading import Thread
 
@@ -29,7 +27,19 @@ def handle_client(client):  # Takes client socket as argument.
             msg = client.recv(BUFSIZ)
         except OSError:
             break
-        if msg != bytes("{quit}", "utf8"):
+        decoded_msg = msg.decode()
+        if decoded_msg[:3] == "/w ":
+            chatter = decoded_msg.split()[1]
+            # decoded_msg = decoded_msg[3:]
+            chatterbool = False
+            for c in clients:
+                if chatter == clients[c]:
+                    decoded_msg = decoded_msg[len(chatter) + 4:]
+                    private_msg(name + " whispers: " + decoded_msg, c)
+                    chatterbool = True
+            if not chatterbool:
+                client.send(("The chatter \'" + chatter + "\' does not exist").encode())
+        elif msg != bytes("{quit}", "utf8"):
             broadcast(msg, name + ": ")
         else:
             try:
@@ -44,9 +54,13 @@ def handle_client(client):  # Takes client socket as argument.
 
 def broadcast(msg, prefix=""):  # prefix is for name identification.
     """Broadcasts a message to all the clients."""
-
     for sock in clients:
         sock.send(bytes(prefix, "utf8") + msg)
+
+
+def private_msg(msg, receiver):
+    """For sending massages to one specific chat member"""
+    receiver.send(msg.encode())
 
 
 clients = {}
