@@ -1,0 +1,4 @@
+{
+  "/w":  "private_msg",
+  "/quit": "client_disconnect"
+}

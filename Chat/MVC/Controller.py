@@ -25,7 +25,7 @@ class chatController:
 
     def close(self):
         """Handles what happens when you close the window"""
-        self.view.my_msg.set("{quit}")
+        self.view.my_msg.set("/quit")
         self.msg_to_send(self.view.my_msg)
 
     def quit(self):

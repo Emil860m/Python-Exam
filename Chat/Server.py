@@ -1,5 +1,6 @@
 from socket import AF_INET, socket, SOCK_STREAM
 from threading import Thread
+import json
 
 
 def accept_incoming_connections():
@@ -7,16 +8,15 @@ def accept_incoming_connections():
     while True:
         client, client_address = SERVER.accept()
         print("%s:%s has connected." % client_address)
-        client.send(bytes("Greetings from the cave! Now type your name and press enter!", "utf8"))
+        client.send(bytes("Welcome to the chat. Please enter your name!", "utf8"))
         addresses[client] = client_address
         Thread(target=handle_client, args=(client,)).start()
 
 
 def handle_client(client):  # Takes client socket as argument.
     """Handles a single client connection."""
-
     name = client.recv(BUFSIZ).decode("utf8")
-    welcome = 'Welcome %s! If you ever want to quit, type {quit} to exit.' % name
+    welcome = 'Welcome %s! If you ever want to quit, type /quit to exit.' % name
     client.send(bytes(welcome, "utf8"))
     msg = "%s has joined the chat!" % name
     broadcast(bytes(msg, "utf8"))
@@ -28,28 +28,22 @@ def handle_client(client):  # Takes client socket as argument.
         except OSError:
             break
         decoded_msg = msg.decode()
-        if decoded_msg[:3] == "/w ":
-            chatter = decoded_msg.split()[1]
-            # decoded_msg = decoded_msg[3:]
-            chatterbool = False
-            for c in clients:
-                if chatter == clients[c]:
-                    decoded_msg = decoded_msg[len(chatter) + 4:]
-                    private_msg(name + " whispers: " + decoded_msg, c)
-                    chatterbool = True
-            if not chatterbool:
-                client.send(("The chatter \'" + chatter + "\' does not exist").encode())
-        elif msg != bytes("{quit}", "utf8"):
-            broadcast(msg, name + ": ")
+        """This checks if you have attempted to enter a command like /w or /quit. 
+        It will then check if it exists. if yes, it will call the right method from the json file"""
+        if decoded_msg[0] == "/":
+            command = decoded_msg.split()[0]
+            command_available = False
+            for x in protocol.keys():
+                if command == x:
+                    """All methods called from this json file
+                     requires the client and the decoded message as parameters"""
+                    command_available = True
+                    globals()[protocol[x]](client, decoded_msg)
+                    break
+            if not command_available:
+                client.send(("The command " + command + " does not exist").encode())
         else:
-            try:
-                client.send(bytes("{quit}", "utf8"))
-                client.close()
-            except OSError:
-                pass
-            del clients[client]
-            broadcast(bytes("%s has left the chat." % name, "utf8"))
-            break
+            broadcast(msg, name + ": ")
 
 
 def broadcast(msg, prefix=""):  # prefix is for name identification.
@@ -58,9 +52,29 @@ def broadcast(msg, prefix=""):  # prefix is for name identification.
         sock.send(bytes(prefix, "utf8") + msg)
 
 
-def private_msg(msg, receiver):
+def private_msg(client, msg):
     """For sending massages to one specific chat member"""
-    receiver.send(msg.encode())
+    name = ""
+    receiver = ""
+    for c in clients:
+        if msg.split()[1] == clients[c]:
+            name = clients[c]
+            receiver = c
+            msg = msg[len(msg.split()[1]) + 4:]
+    try:
+        client.send((name + " whispers: " + msg).encode())
+        receiver.send((name + " whispers: " + msg).encode())
+    except AttributeError:
+        client.send(("Chatter \'" + msg.split()[1] + "\' does not exist.").encode())
+
+
+def client_disconnect(client, msg):
+    try:
+        print(clients[client] + " disconnected")
+        client.close()
+    except OSError:
+        print("Error")
+    del clients[client]
 
 
 clients = {}
@@ -73,6 +87,11 @@ ADDR = (HOST, PORT)
 
 SERVER = socket(AF_INET, SOCK_STREAM)
 SERVER.bind(ADDR)
+
+with open('.protocol.json') as protocol_file:
+    """This json file contains the different functions and their method calls. 
+    Whenever a new method is implemented put the key as the protocol and method call as value"""
+    protocol = json.load(protocol_file)
 
 if __name__ == "__main__":
     SERVER.listen(5)

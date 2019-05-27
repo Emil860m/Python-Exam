@@ -7,7 +7,7 @@ class Client:
     def send_msg(self, msg):
         """Sends the messages to the server"""
         self.client_socket.send(msg.encode())
-        if msg == "{quit}":
+        if msg == "/quit":
             self.client_socket.close()
             self.controller.quit()
             self.alive = False
