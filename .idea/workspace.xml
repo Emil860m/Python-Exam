@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db8172f7-65c4-403a-89f1-ba80372c1e86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chat/.protocol.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chat/MVC/Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chat/MVC/Controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chat/MVC/Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chat/MVC/Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chat/Server.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chat/Server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC/Client.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC/Controller.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC/Model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC/View.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonChat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chat/PythonChat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testClient.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testServer.py" beforeDir="false" />
-    </list>
+    <list default="true" id="db8172f7-65c4-403a-89f1-ba80372c1e86" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Chat/Server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-884">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="714">
+              <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -73,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/__init__.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -171,17 +154,6 @@
             <path>
               <item name="Python Exam" type="b2602c69:ProjectViewProjectNode" />
               <item name="Python Exam" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Python Exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python Exam" type="462c0819:PsiDirectoryNode" />
-              <item name="Chat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Python Exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python Exam" type="462c0819:PsiDirectoryNode" />
-              <item name="Chat" type="462c0819:PsiDirectoryNode" />
-              <item name="MVC" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -352,12 +324,12 @@
       <updated>1558688706228</updated>
       <workItem from="1558688713753" duration="7528000" />
       <workItem from="1558711457009" duration="19899000" />
-      <workItem from="1558942166512" duration="6280000" />
+      <workItem from="1558942166512" duration="6537000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33707000" />
+    <option name="totallyTimeSpent" value="33964000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -562,18 +534,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Chat/Server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-884">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="714">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
