@@ -1,3 +1,6 @@
+"""
+This file contains the different commands available in the chat.
+"""
 commands = {
     "/w": "private_msg",
     "/quit": "client_disconnect"
@@ -8,6 +11,7 @@ commands = {
 1: client; The client sending the message
 2: msg; The message send
 """
+
 
 def private_msg(para):
     """For sending massages to one specific chat member"""
@@ -24,10 +28,10 @@ def private_msg(para):
             name = clients[c]
             receiver = c
             msg = msg[len(whisper_to) + 4:]
-    try:
+    if receiver != "":
         client.send(("You whisper " + name + ": " + msg).encode())
         receiver.send((clients[client] + " whispers: " + msg).encode())
-    except AttributeError:
+    else:
         client.send(("Chatter \'" + msg.split()[1] + "\' does not exist.").encode())
 
 
@@ -35,4 +39,5 @@ def client_disconnect(para):
     """Handles when a client disconnects"""
     clients = para[0]
     client = para[1]
+    print(clients[client] + " disconnected")
     del clients[client]
