@@ -1,4 +1,3 @@
-import Chat.Server.Server
 commands = {
     "/w": "private_msg",
     "/quit": "client_disconnect"
