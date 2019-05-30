@@ -39,7 +39,7 @@ class Server:
                         # print(decoded_msg)
                         """All methods called from this json file
                          requires the client and the decoded message as parameters"""
-                        parameter_list = [self.clients, client, decoded_msg]
+                        parameter_list = [self.clients, client, decoded_msg, name]
                         command_available = True
                         getattr(Chat.Server.chatcommands, self.protocol[x])(parameter_list)
                         # globals()[self.protocol[x]](parameter_list)
