@@ -22,6 +22,9 @@ class ClientView:
         self.msg_list.pack()
         messages_frame.pack()
 
+
+
+
         """Input box and send button"""
         entry_field = tkinter.Entry(self.top, textvariable=self.input)
         entry_field.bind("<Return>", self.controller.msg_to_send)
@@ -29,8 +32,8 @@ class ClientView:
         send_button = tkinter.Button(self.top, text="Send", command=lambda: self.controller.msg_to_send(self.input))
         send_button.pack()
         """Not working yet"""
-        # file_button = tkinter.Button(self.top, text="Send file", command=lambda: self.controller.find_file())
-        # file_button.pack()
+        file_button = tkinter.Button(self.top, text="Send file", command=lambda: self.controller.find_file())
+        file_button.pack()
 
         """On closing the window"""
         self.top.protocol("WM_DELETE_WINDOW", self.controller.close)

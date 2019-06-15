@@ -1,4 +1,6 @@
 import tkinter
+from tkinter import filedialog
+from tkinter import Label
 
 import Chat.MVC.View
 import Chat.MVC.Model
@@ -21,6 +23,8 @@ class chatController:
 
     def msg_received(self, msg):
         """Handles messages going from the model to the view"""
+        if msg.decode().split()[0] == "/file":
+            msg = self.receive_file(msg)
         self.view.msg_list.insert(tkinter.END, msg)
 
     def close(self):
@@ -35,7 +39,18 @@ class chatController:
     """Not working yet"""
     def find_file(self):
         """Finds the file to send to the server"""
-        filename = self.view.top.filedialog.askopenfilename(initialdir="/", title="Select file", filetypes=(("jpeg files", "*.jpg"), ("all files", "*.*")))
-        self.msg_to_send("/file")
-        self.model.send_file(filename)
+        filename = filedialog.askopenfilename(initialdir="/", title="Select file", filetypes=(("jpeg files", "*.jpg"), ("all files", "*.*")))
+        if filename:
+            self.model.send_file(filename)
 
+    def receive_file(self, msg):
+        msg = msg.decode()
+        link = Label(self.view.top, text=msg.split()[5], fg="blue", cursor="hand2")
+        link.pack()
+        link.bind("<Button-1>", lambda e: self.request_file_from_server(link.cget("text")))
+        msg = msg.split()[1:]
+        return msg
+
+
+    def request_file_from_server(self, filename):
+        self.model.receive_file(filename)

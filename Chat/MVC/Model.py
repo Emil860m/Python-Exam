@@ -1,5 +1,8 @@
 from socket import AF_INET, socket, SOCK_STREAM
 from threading import Thread
+from socket import SHUT_WR
+
+import Chat.MVC.protocol
 
 
 class Client:
@@ -22,16 +25,43 @@ class Client:
                 break
 
     def send_file(self, filename):
-        pass
+        file = filename.split("/")
+        file = file[len(file)-1]
+        self.send_msg("/file " + file)
+        temp_socket = socket(AF_INET, SOCK_STREAM)
+        # time.sleep(10)
+        temp_socket.connect(("127.0.0.1", 12345))
+        f = open(filename, "rb")
+        l = f.read(1024)
+        while l:
+            temp_socket.send(l)
+            l = f.read(1024)
+        f.close()
+        temp_socket.shutdown(SHUT_WR)
+        temp_socket.close()
 
-    def receive_file(self):
-        pass
+
+
+    def receive_file(self, filename):
+        self.send_msg("/filesend " + filename)
+        temp_socket = socket(AF_INET, SOCK_STREAM)
+        temp_socket.connect(("127.0.0.1", 12346))
+        f = open("C:/Users/amxur/Desktop/Python-exam/Python-Exam/Chat/MVC/files/" + filename, "wb+")
+        l = temp_socket.recv(1024)
+        while l:
+            f.write(l)
+            l = temp_socket.recv(1024)
+        f.close()
+        temp_socket.close()
+
 
     def __init__(self, controller):
         """Constructor creating the connection to the server"""
         self.alive = True
 
         self.controller = controller
+
+        self.protocol = Chat.MVC.protocol.commands
 
         HOST = '127.0.0.1'
         PORT = 50000
