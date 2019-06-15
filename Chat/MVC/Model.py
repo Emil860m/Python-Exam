@@ -29,7 +29,6 @@ class Client:
         file = file[len(file)-1]
         self.send_msg("/file " + file)
         temp_socket = socket(AF_INET, SOCK_STREAM)
-        # time.sleep(10)
         temp_socket.connect(("127.0.0.1", 12345))
         f = open(filename, "rb")
         l = f.read(1024)

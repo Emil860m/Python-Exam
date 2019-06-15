@@ -31,7 +31,7 @@ class ClientView:
         entry_field.pack()
         send_button = tkinter.Button(self.top, text="Send", command=lambda: self.controller.msg_to_send(self.input))
         send_button.pack()
-        """Not working yet"""
+        """Send file button"""
         file_button = tkinter.Button(self.top, text="Send file", command=lambda: self.controller.find_file())
         file_button.pack()
 

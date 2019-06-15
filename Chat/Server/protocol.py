@@ -28,7 +28,6 @@ def private_msg(para):
     msg = para[2]
     whisper_to = msg.split()[1]
     name = para[3]
-    # print(clients)
     for c in clients:
         if whisper_to == clients[c]:
             receiver_name = clients[c]
@@ -77,6 +76,7 @@ def handle_file(para):
 
 
 def send_file(para):
+    """When a client requests a file this function handles it"""
     print("File requested")
     msg = para[2]
     filename = "C:/Users/amxur/Desktop/Python-exam/Python-Exam/Chat/Server/Files/" + msg.split()[1]
