@@ -36,7 +36,7 @@ class chatController:
         """Handles closing the window if you type the /quit command"""
         self.view.top.quit()
 
-    """Not working yet"""
+
     def find_file(self):
         """Finds the file to send to the server"""
         filename = filedialog.askopenfilename(initialdir="/", title="Select file")
@@ -44,6 +44,7 @@ class chatController:
             self.model.send_file(filename)
 
     def receive_file(self, msg):
+        """Creates a click-able link to request a file that was send to the server"""
         msg = msg.decode()
         link = Label(self.view.top, text=msg.split()[5], fg="blue", cursor="hand2")
         link.pack()
@@ -53,4 +54,5 @@ class chatController:
 
 
     def request_file_from_server(self, filename):
+        """Asks the server to send selected file to the client"""
         self.model.receive_file(filename)
