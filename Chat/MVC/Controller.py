@@ -39,7 +39,7 @@ class chatController:
     """Not working yet"""
     def find_file(self):
         """Finds the file to send to the server"""
-        filename = filedialog.askopenfilename(initialdir="/", title="Select file", filetypes=(("jpeg files", "*.jpg"), ("all files", "*.*")))
+        filename = filedialog.askopenfilename(initialdir="/", title="Select file")
         if filename:
             self.model.send_file(filename)
 
