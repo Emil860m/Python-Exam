@@ -21,6 +21,12 @@ class Client:
             except OSError:
                 break
 
+    def send_file(self, filename):
+        pass
+
+    def receive_file(self):
+        pass
+
     def __init__(self, controller):
         """Constructor creating the connection to the server"""
         self.alive = True

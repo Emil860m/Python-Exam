@@ -21,18 +21,17 @@ def private_msg(para):
     clients = para[0]
     client = para[1]
     msg = para[2]
-    name = para[3]
     whisper_to = msg.split()[1]
+    name = para[3]
     # print(clients)
     for c in clients:
-        #  todo: bug when 2nd client connected tries to whisper. makes no sense
         if whisper_to == clients[c]:
             receiver_name = clients[c]
             receiver = c
             msg = msg[len(whisper_to) + 4:]
     if receiver != "":
         client.send(("You whisper " + receiver_name + ": " + msg).encode())
-        receiver.send((clients[client] + " whispers: " + msg).encode())
+        receiver.send((name + " whispers: " + msg).encode())
     else:
         client.send(("Chatter \'" + msg.split()[1] + "\' does not exist.").encode())
 
@@ -43,3 +42,8 @@ def client_disconnect(para):
     client = para[1]
     print(clients[client] + " disconnected")
     del clients[client]
+
+
+def handle_file(para):
+    """Handles receiving a file"""
+    pass

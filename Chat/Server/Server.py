@@ -1,7 +1,7 @@
 from socket import AF_INET, socket, SOCK_STREAM
 from threading import Thread
 
-import Chat.Server.chatcommands
+import Chat.Server.protocol
 
 
 class Server:
@@ -10,7 +10,7 @@ class Server:
         while True:
             client, client_address = self.SERVER.accept()
             print("%s:%s has connected." % client_address)
-            client.send(bytes("Welcome to the chat. Please enter your name!", "utf8"))
+            client.send("Welcome to the chat. Please enter your name!".encode())
             self.addresses[client] = client_address
             Thread(target=self.handle_client, args=(client,)).start()
 
@@ -18,9 +18,9 @@ class Server:
         """Handles a single client connection."""
         name = client.recv(self.BUFSIZ).decode("utf8")
         welcome = 'Welcome %s! If you ever want to quit, type /quit to exit.' % name
-        client.send(bytes(welcome, "utf8"))
+        client.send(welcome.encode())
         msg = "%s has joined the chat!" % name
-        self.broadcast(bytes(msg, "utf8"))
+        self.broadcast(msg.encode())
         self.clients[client] = name
         """While loop for receiving, handling and sending messages"""
         while True:
@@ -41,7 +41,7 @@ class Server:
                          requires the client and the decoded message as parameters"""
                         parameter_list = [self.clients, client, decoded_msg, name]
                         command_available = True
-                        getattr(Chat.Server.chatcommands, self.protocol[x])(parameter_list)
+                        getattr(Chat.Server.protocol, self.protocol[x])(parameter_list)
                         # globals()[self.protocol[x]](parameter_list)
                         break
                 if not command_available:
@@ -51,8 +51,8 @@ class Server:
 
     def broadcast(self, msg, prefix=""):  # prefix is for name identification.
         """Broadcasts a message to all the clients."""
-        for sock in self.clients:
-            sock.send(bytes(prefix, "utf8") + msg)
+        for s in self.clients:
+            s.send(prefix.encode() + msg)
 
     def __init__(self):
         self.clients = {}
@@ -68,10 +68,8 @@ class Server:
         self.SERVER.bind(ADDR)
         """This python file contains the different functions and their method calls. 
             Whenever a new method is implemented put the key as the protocol and method call as value"""
-        self.protocol = Chat.Server.chatcommands.commands
-        #with open('.protocol.json') as protocol_file:
-            #self.protocol = json.load(protocol_file)
-        # if __name__ == "__main__":
+        self.protocol = Chat.Server.protocol.commands
+
         self.SERVER.listen(5)
         print("Waiting for connection...")
         ACCEPT_THREAD = Thread(target=self.accept_incoming_connections)

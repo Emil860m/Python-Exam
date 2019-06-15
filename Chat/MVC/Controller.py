@@ -15,9 +15,9 @@ class chatController:
     def msg_to_send(self, msg):
         """Handles messages going from the view to the model"""
         if isinstance(msg, tkinter.Event) or isinstance(msg, tkinter.StringVar):
-            msg = self.view.my_msg.get()
+            msg = self.view.input.get()
         self.model.send_msg(msg)
-        self.view.my_msg.set("")
+        self.view.input.set("")
 
     def msg_received(self, msg):
         """Handles messages going from the model to the view"""
@@ -25,9 +25,17 @@ class chatController:
 
     def close(self):
         """Handles what happens when you close the window"""
-        self.view.my_msg.set("/quit")
-        self.msg_to_send(self.view.my_msg)
+        self.view.input.set("/quit")
+        self.msg_to_send(self.view.input)
 
     def quit(self):
-        """Handles closing the window if you type the {quit} command"""
+        """Handles closing the window if you type the /quit command"""
         self.view.top.quit()
+
+    """Not working yet"""
+    def find_file(self):
+        """Finds the file to send to the server"""
+        filename = self.view.top.filedialog.askopenfilename(initialdir="/", title="Select file", filetypes=(("jpeg files", "*.jpg"), ("all files", "*.*")))
+        self.msg_to_send("/file")
+        self.model.send_file(filename)
+
