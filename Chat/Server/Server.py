@@ -33,19 +33,11 @@ class Server:
             It will then check if it exists. if yes, it will call the right method from the json file"""
             if decoded_msg[0] == "/":
                 command = decoded_msg.split()[0]
-                command_available = False
-                for x in self.protocol.keys():
-                    if command == x:
-                        # print(decoded_msg)
-                        """All methods called from this json file
-                         requires the client and the decoded message as parameters"""
-                        parameter_list = [self.clients, client, decoded_msg, name]
-                        command_available = True
-                        getattr(Chat.Server.protocol, self.protocol[x])(parameter_list)
-                        # globals()[self.protocol[x]](parameter_list)
-                        break
-                if not command_available:
-                    client.send(("The command " + command + " does not exist").encode())
+                parameter_list = [self.clients, client, decoded_msg, name]
+                try:
+                    getattr(Chat.Server.protocol, self.protocol[command])(parameter_list)
+                except KeyError:
+                   client.send(("The command " + command + " does not exist").encode())
             else:
                 self.broadcast(msg, name + ": ")
 
