@@ -37,7 +37,7 @@ class Server:
                 try:
                     getattr(Chat.Server.protocol, self.protocol[command])(parameter_list)
                 except KeyError:
-                   client.send(("The command " + command + " does not exist").encode())
+                    client.send(("The command " + command + " does not exist").encode())
             else:
                 self.broadcast(msg, name + ": ")
 
