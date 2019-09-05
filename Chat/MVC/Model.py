@@ -45,7 +45,7 @@ class Client:
         self.send_msg("/filesend " + filename)
         temp_socket = socket(AF_INET, SOCK_STREAM)
         temp_socket.connect(("127.0.0.1", 12346))
-        f = open("C:/Users/amxur/Desktop/Python-exam/Python-Exam/Chat/MVC/files/" + filename, "wb+")
+        f = open("C:/Users/amxur/Desktop/Python Exam/Chat/MVC/Files/" + filename, "wb+")
         l = temp_socket.recv(1024)
         while l:
             f.write(l)

@@ -11,7 +11,7 @@ print(type(my_tuple))
 """Classes and protocols"""
 
 
-class A():
+class A:
     def __init__(self):
         self.a = 42
 
@@ -21,6 +21,21 @@ class A():
 
 a = A()
 print(a)
+
+
+class Color:
+    def __init__(self, r, g, b):
+        self.r = max(min(1, r), 0)
+        self.g = max(min(1,g),0)
+        self.b = max(min(1,b),0)
+
+    def __add__(self, other):
+        return "(" + str(self.r + other.r) + ", " + str(self.g + other.g) + ", " + str(self.b + other.b) + ")"
+
+c = Color(1,0,0)
+b = Color(0,1,0)
+print(c + b)
+
 
 import random
 

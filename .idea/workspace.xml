@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db8172f7-65c4-403a-89f1-ba80372c1e86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chat/Exam prep/Exam prep UI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chat/Exam prep/Exam prep.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chat/Exam prep/Exam prep.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chat/Server/Server.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chat/Server/Server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chat/Exam prep/Exam.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chat/Exam prep/Exam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chat/MVC/Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chat/MVC/Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chat/Server/protocol.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chat/Server/protocol.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,12 +24,13 @@
     <SUITE FILE_PATH="coverage/Python_Exam$ma1_emil860m.coverage" NAME="ma1-emil860m Coverage Results" MODIFIED="1560696183502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/temp" />
     <SUITE FILE_PATH="coverage/Python_Exam$testClient.coverage" NAME="testClient Coverage Results" MODIFIED="1558721742180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_Exam$Unittests_in_test_model_py.coverage" NAME="Unittests in test_model.py Coverage Results" MODIFIED="1559240585586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chat/Unittest/client test" />
-    <SUITE FILE_PATH="coverage/Python_Exam$ChatClient.coverage" NAME="ChatClient Coverage Results" MODIFIED="1560871753122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chat" />
-    <SUITE FILE_PATH="coverage/Python_Exam$ChatServer.coverage" NAME="ChatServer Coverage Results" MODIFIED="1560871225944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chat" />
+    <SUITE FILE_PATH="coverage/Python_Exam$ChatClient.coverage" NAME="ChatClient Coverage Results" MODIFIED="1560942790455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chat" />
+    <SUITE FILE_PATH="coverage/Python_Exam$ChatServer.coverage" NAME="ChatServer Coverage Results" MODIFIED="1560942784078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chat" />
     <SUITE FILE_PATH="coverage/Python_Exam$Server__1_.coverage" NAME="Server (1) Coverage Results" MODIFIED="1558986621997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chat" />
-    <SUITE FILE_PATH="coverage/Python_Exam$Exam_prep.coverage" NAME="Exam prep Coverage Results" MODIFIED="1560883126844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chat/Exam prep" />
+    <SUITE FILE_PATH="coverage/Python_Exam$Exam_prep.coverage" NAME="Exam prep Coverage Results" MODIFIED="1560938639689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chat/Exam prep" />
     <SUITE FILE_PATH="coverage/Python_Exam$uploadingfiles.coverage" NAME="uploadingfiles Coverage Results" MODIFIED="1560614050404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/temp" />
     <SUITE FILE_PATH="coverage/Python_Exam$ListComprehensions.coverage" NAME="ListComprehensions Coverage Results" MODIFIED="1560697603304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/temp" />
+    <SUITE FILE_PATH="coverage/Python_Exam$Exam.coverage" NAME="Exam Coverage Results" MODIFIED="1560944115201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chat/Exam prep" />
     <SUITE FILE_PATH="coverage/Python_Exam$PythonChat__1_.coverage" NAME="PythonChat (1) Coverage Results" MODIFIED="1558986631685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chat" />
     <SUITE FILE_PATH="coverage/Python_Exam$Unittests_for_test_model_TestModel_test_send.coverage" NAME="Unittests for test_model.TestModel.test_send Coverage Results" MODIFIED="1559237656740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chat/Unittest/client test" />
     <SUITE FILE_PATH="coverage/Python_Exam$generators.coverage" NAME="generators Coverage Results" MODIFIED="1560698398199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/temp" />
@@ -41,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chat/Server/Server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-481">
-              <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+            <state relative-caret-position="170">
+              <caret line="37" column="16" lean-forward="true" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -51,14 +53,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chat/Exam prep/test.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/temp/ma1-emil860m.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="946">
+            <state relative-caret-position="731">
               <caret line="43" column="10" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
             </state>
           </provider>
@@ -67,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chat/Server/protocol.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1694">
-              <caret line="78" column="61" selection-start-line="78" selection-start-column="61" selection-end-line="78" selection-end-column="61" />
+            <state relative-caret-position="1377">
+              <caret line="81" column="19" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -79,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chat/MVC/Model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="136">
+              <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -88,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chat/Exam prep/Exam prep.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="261" column="48" selection-start-line="261" selection-start-column="48" selection-end-line="261" selection-end-column="48" />
+            <state relative-caret-position="136">
+              <caret line="32" column="86" selection-start-line="32" selection-start-column="86" selection-end-line="32" selection-end-column="86" />
             </state>
           </provider>
         </entry>
@@ -100,21 +97,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chat/Exam prep/Exam prep UI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Chat/Exam prep/Exam.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="466">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chat/Exam prep/Exam.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chat/MVC/protocol.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
+            <state relative-caret-position="187">
               <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
             </state>
           </provider>
@@ -123,7 +124,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chat/ChatClient.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
+            <state relative-caret-position="68">
               <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
@@ -181,25 +182,24 @@
         <option value="$PROJECT_DIR$/Chat/Server/chatcommands.py" />
         <option value="$PROJECT_DIR$/Chat/MVC/protocol.py" />
         <option value="$PROJECT_DIR$/temp/uploadingfiles.py" />
-        <option value="$PROJECT_DIR$/Chat/Server/protocol.py" />
         <option value="$PROJECT_DIR$/Chat/MVC/View.py" />
         <option value="$PROJECT_DIR$/Chat/MVC/Controller.py" />
         <option value="$PROJECT_DIR$/temp/ma1-emil860m.py" />
         <option value="$PROJECT_DIR$/temp/ListComprehensions.py" />
         <option value="$PROJECT_DIR$/temp/generators.py" />
-        <option value="$PROJECT_DIR$/Chat/Exam prep/Exam.py" />
-        <option value="$PROJECT_DIR$/Chat/MVC/Model.py" />
         <option value="$PROJECT_DIR$/Chat/Server/Server.py" />
         <option value="$PROJECT_DIR$/Chat/Exam prep/Exam prep UI.py" />
+        <option value="$PROJECT_DIR$/Chat/Server/protocol.py" />
+        <option value="$PROJECT_DIR$/Chat/MVC/Model.py" />
         <option value="$PROJECT_DIR$/Chat/Exam prep/Exam prep.py" />
+        <option value="$PROJECT_DIR$/Chat/Exam prep/Exam.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="218" />
-    <option name="y" value="-28" />
-    <option name="width" value="2572" />
-    <option name="height" value="1744" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="134" />
+    <option name="width" value="2614" />
+    <option name="height" value="1634" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -211,36 +211,43 @@
         <subPane>
           <expand>
             <path>
-              <item name="Python-Exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python-Exam" type="462c0819:PsiDirectoryNode" />
+              <item name="Python Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python Exam" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Python-Exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python-Exam" type="462c0819:PsiDirectoryNode" />
+              <item name="Python Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python Exam" type="462c0819:PsiDirectoryNode" />
               <item name="Chat" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Python-Exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python-Exam" type="462c0819:PsiDirectoryNode" />
+              <item name="Python Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python Exam" type="462c0819:PsiDirectoryNode" />
               <item name="Chat" type="462c0819:PsiDirectoryNode" />
               <item name="Exam prep" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Python-Exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python-Exam" type="462c0819:PsiDirectoryNode" />
+              <item name="Python Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python Exam" type="462c0819:PsiDirectoryNode" />
               <item name="Chat" type="462c0819:PsiDirectoryNode" />
               <item name="MVC" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Python-Exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python-Exam" type="462c0819:PsiDirectoryNode" />
+              <item name="Python Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python Exam" type="462c0819:PsiDirectoryNode" />
               <item name="Chat" type="462c0819:PsiDirectoryNode" />
               <item name="Server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Python-Exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python-Exam" type="462c0819:PsiDirectoryNode" />
-              <item name="temp" type="462c0819:PsiDirectoryNode" />
+              <item name="Python Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python Exam" type="462c0819:PsiDirectoryNode" />
+              <item name="Chat" type="462c0819:PsiDirectoryNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
+              <item name="Files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Python Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python Exam" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -254,7 +261,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.quicklists" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -281,8 +288,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Exam prep">
-    <configuration name="ChatClient" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Exam">
+    <configuration name="ChatClient" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true">
       <module name="Python Exam" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -348,7 +355,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ListComprehensions" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Exam" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python Exam" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -356,12 +363,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/temp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Chat/Exam prep" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/temp/ListComprehensions.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Chat/Exam prep/Exam.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -393,19 +400,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.ListComprehensions" />
       <item itemvalue="Python.generators" />
       <item itemvalue="Python.Exam prep" />
       <item itemvalue="Python.ChatServer" />
       <item itemvalue="Python.ChatClient" />
+      <item itemvalue="Python.Exam" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Exam prep" />
+        <item itemvalue="Python.Exam" />
         <item itemvalue="Python.ChatClient" />
         <item itemvalue="Python.ChatServer" />
+        <item itemvalue="Python.Exam prep" />
         <item itemvalue="Python.generators" />
-        <item itemvalue="Python.ListComprehensions" />
       </list>
     </recent_temporary>
   </component>
@@ -430,6 +437,7 @@
       <workItem from="1560680627099" duration="11721000" />
       <workItem from="1560794470694" duration="5176000" />
       <workItem from="1560865330013" duration="10618000" />
+      <workItem from="1560884262896" duration="4372000" />
     </task>
     <servers />
   </component>
@@ -466,7 +474,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122886000" />
+    <option name="totallyTimeSpent" value="127258000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -478,15 +486,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="67" y="0" width="1307" height="817" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49937108" visible="true" weight="0.28114665" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49937108" visible="true" weight="0.28582865" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50062895" side_tool="true" weight="0.25614592" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42159918" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23726347" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -692,41 +700,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Chat/Exam prep/test.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/temp/ma1-emil860m.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
+        <state relative-caret-position="731">
           <caret line="43" column="10" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chat/Server/protocol.py">
+    <entry file="file://$PROJECT_DIR$/Chat/Exam prep/Exam prep UI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1694">
-          <caret line="78" column="61" selection-start-line="78" selection-start-column="61" selection-end-line="78" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chat/MVC/protocol.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
+        <state relative-caret-position="187">
           <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chat/ChatClient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
+        <state relative-caret-position="68">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Chat/Server/Files/Lengend.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chat/MVC/Files/Lengend.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Chat/MVC/Model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="136">
+          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chat/Exam prep/Exam prep.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="32" column="86" selection-start-line="32" selection-start-column="86" selection-end-line="32" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chat/Server/protocol.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="81" column="19" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chat/Server/Server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="37" column="16" lean-forward="true" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
@@ -734,32 +775,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chat/Exam prep/Exam.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chat/Exam prep/test.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chat/Server/Server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-481">
-          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chat/Exam prep/Exam prep UI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chat/Exam prep/Exam prep.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="261" column="48" selection-start-line="261" selection-start-column="48" selection-end-line="261" selection-end-column="48" />
+        <state relative-caret-position="466">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>

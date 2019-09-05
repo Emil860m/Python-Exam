@@ -63,7 +63,7 @@ def handle_file(para):
     print("listening")
     c, addr = temp_socket.accept()
     print("connected")
-    f = open("C:/Users/amxur/Desktop/Python-exam/Python-Exam/Chat/Server/Files/" + filename, "wb+")
+    f = open("C:/Users/amxur/Desktop/Python Exam/Chat/Server/Files/" + filename, "wb+")
     l = c.recv(1024)
     while l:
         f.write(l)
@@ -79,7 +79,7 @@ def send_file(para):
     """When a client requests a file this function handles it"""
     print("File requested")
     msg = para[2]
-    filename = "C:/Users/amxur/Desktop/Python-exam/Python-Exam/Chat/Server/Files/" + msg.split()[1]
+    filename = "C:/Users/amxur/Desktop/Python Exam/Chat/Server/Files/" + msg.split()[1]
     temp_socket = socket.socket()
     temp_socket.bind(("127.0.0.1", 12346))
     temp_socket.listen(0)
